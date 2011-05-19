@@ -16,6 +16,8 @@ package that makes bootstrapping local search quick and easy.
 TEXT
   s.add_runtime_dependency 'rsolr', '~> 1.0'
   s.add_runtime_dependency 'soolr', Sunspot::Client::VERSION
+  s.add_runtime_dependency 'json_pure', '~> 1.5.1'
+
   s.add_development_dependency 'fakeweb'
   s.add_development_dependency 'rspec'
 end
