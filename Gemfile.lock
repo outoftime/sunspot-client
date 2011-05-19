@@ -8,6 +8,7 @@ PATH
   remote: .
   specs:
     sunspot-client (2.0.pre.1)
+      json_pure (~> 1.5.1)
       rsolr (~> 1.0)
       soolr (= 2.0.pre.1)
 
@@ -17,6 +18,8 @@ GEM
     builder (3.0.0)
     diff-lcs (1.1.2)
     fakeweb (1.3.0)
+    json_pure (1.5.1)
+    nokogiri (1.4.4)
     rsolr (1.0.0)
       builder (>= 2.1.2)
     rspec (2.6.0)
@@ -33,6 +36,7 @@ PLATFORMS
 
 DEPENDENCIES
   fakeweb
+  nokogiri
   rspec
   soolr!
   sunspot-client!
