@@ -29,6 +29,10 @@ module Sunspot
       FakeWeb.last_request
     end
 
+    def mock_all_updates
+      FakeWeb.register_uri(:post, %r|/update\?wt=ruby$|, :body => "{'responseHeader'=>{'status'=>0,'QTime'=>1}}")
+    end
+
     private
 
     def as_sorted_query_string(params)

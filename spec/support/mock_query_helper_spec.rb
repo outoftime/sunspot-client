@@ -20,4 +20,17 @@ describe Sunspot::MockQueryHelper do
       last_request.should equal request
     end
   end
+
+  describe '#mock_all_updates' do
+    it 'mocks all update requests and returns success' do
+      mock_all_updates
+
+      http = Net::HTTP.new('localhost', 8982)
+      request = Net::HTTP::Post.new('/solr/update?wt=ruby')
+
+      expect {
+        http.request(request)
+      }.to_not raise_error
+    end
+  end
 end
