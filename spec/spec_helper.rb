@@ -2,6 +2,7 @@ require 'rspec'
 
 # Support
 require File.join(File.dirname(__FILE__), 'support', 'mock_query_helper')
+require File.join(File.dirname(__FILE__), 'support', 'update_document_matcher')
 
 RSpec.configure do |config|
   config.include Sunspot::MockQueryHelper
