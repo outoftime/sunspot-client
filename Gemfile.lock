@@ -1,8 +1,15 @@
+GIT
+  remote: git://github.com/outoftime/soolr.git
+  revision: b1ddfd13ab8d39c9ffa07f8355e4911860c45f5f
+  specs:
+    soolr (2.0.pre.1)
+
 PATH
   remote: .
   specs:
     sunspot-client (2.0.pre.1)
       rsolr (~> 1.0)
+      soolr (= 2.0.pre.1)
 
 GEM
   remote: http://rubygems.org/
@@ -27,4 +34,5 @@ PLATFORMS
 DEPENDENCIES
   fakeweb
   rspec
+  soolr!
   sunspot-client!
